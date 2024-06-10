@@ -1,0 +1,47 @@
+def dotted2dec(dotted):
+	dotted_split = dotted.split('.')
+	a, b, c, d = dotted_split
+	a_int = int(a)
+	b_int = int(b)
+	c_int = int(c)
+	d_int = int(d)
+	dec = a_int*256**3 + b_int*256**2 + c_int*256 + d_int
+	return dec
+
+def dec2dotted(dec):
+	getal = int(dec)
+	a = getal % 256
+	getal = getal // 256
+	b = getal % 256
+	getal = getal // 256
+	c = getal % 256
+	getal = getal // 256
+	d = getal % 256
+	dotted = f'{d}.{c}.{b}.{a}'
+	return dotted
+
+def dec2cidr(dec):
+	binair = bin(dec)
+	cidr = binair.count('1')
+	return cidr
+
+def cidr2dec(cidr):
+	fill = 32 - cidr
+	binair = '1' * cidr
+	zerofill = '0' * fill
+	binair = binair + zerofill
+	dec = int(binair, 2)
+	return dec
+
+
+# x = random.randint(onder, boven)
+# smbits = random.randint(ondersm, bovensm)
+# sm = hb.cidr2dec(smbits)
+
+# na = x & sm
+
+# range = sm ^ hb.ALL_ONES
+# ba = na + range
+# hrfi = na + 1
+# hrla = ba - 1
+# hostid = x - na
