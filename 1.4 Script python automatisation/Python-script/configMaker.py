@@ -38,8 +38,8 @@ subnetLokalen = ipCalc.berekenSubnetAdresen(ipNetwork, subnetLokalenCidr, aantal
 vlanLokalen = 10 # Voor de lokalen beginnen we met VLAN 10
 
 # Subnet berekenen voor de wifi netwerk
-# hier gaan we van start na de laatste subnet van de lokalen + 1 subnet ertussen laten
-wifiNetwerkDec = ipCalc.dotted2dec(ipNetwork) + 2 ** (32-subnetLokalenCidr) + aantalLokalen * (2**(32 - subnetLokalenCidr)) 
+# hier gaan we de basis IP van de netwerk nemen en 2 incrementeren op de 3 bit.
+wifiNetwerkDec = ipCalc.dotted2decPlus2(ipNetwork)
 WifiNetwerkDotted = ipCalc.dec2dotted(wifiNetwerkDec)
 subnetWifi = WifiNetwerkDotted + f'/{subnetWifiCidr}'
 vlanWifi = 999 # Voor de wifi gebruiken we VLAN 999
@@ -53,13 +53,25 @@ print(f"\nWi-Fi VLAN: VLAN {vlanWifi}, Subnet {subnetWifi}")
 
 
 # Aan de gebruiker vragen van welk lokaal hij de configuratie wil genereren en dit in een loop
+# kan ook de router configuratie genereren door router in te tjpen
+# De loop kan gestopt worden door exit te tijpen
 while True:
     print(f"\nVoor welk lokaal (1-{aantalLokalen}) wilt u de configuratie genereren ? (tijp 'exit' om te stoppen): ")
+    print(f"\nTijp 'router' om de configuratie van de router te genereren.")
     keuze = input()
     
     if keuze.lower() == 'exit':
         break
 
+    # Config van de router genereren
+    if keuze.lower() == 'router':
+        print("\n Configuratie gegenereerd voor de router:\n")
+        routerConfig = hwConfig.genereerRouterConfig(naamLocatie, vlanLokalen, subnetLokalen, subnetLokalenDotted, vlanWifi, subnetWifi, subnetWifiDotted)
+        for line in routerConfig:
+            print(line)
+        continue
+    
+    # Config van de switch genereren
     try:
         lokaal = int(keuze) - 1 # -1 omdat de indexen in de array beginnen vanaf 0
         if 0 <= lokaal < aantalLokalen:

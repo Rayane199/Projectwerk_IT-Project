@@ -35,6 +35,17 @@ def cidr2dec(cidr):
 	dec = int(binair, 2)
 	return dec
 
+
+def dotted2decPlus2(dotted):
+	dotted_split = dotted.split('.')
+	a, b, c, d = dotted_split
+	a_int = int(a)
+	b_int = int(b)
+	c_int = int(c) + 2
+	d_int = int(d)
+	dec = a_int*256**3 + b_int*256**2 + c_int*256 + d_int
+	return dec
+
 # subnet masker berekenen in codr notatie
 # Eerst aantal bits nodig berekenen via log2 op aantal host doen en dan 32 bits verminderen met aantal bits nodig
 def berekenSubnetmask(aantalHosts):
