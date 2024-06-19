@@ -1,0 +1,78 @@
+connection: network_cli
+gather_facts: false
+hosts: routers
+tasks:
+- ios_system:
+    domain_name: Odisee
+    hostname: R1
+  name: Set hostname and domain name
+- ios_config:
+    lines:
+    - crypto key generate rsa
+  name: Generate RSA key pair for SSH
+- ios_config:
+    lines:
+    - ip ssh version 2
+    - ip ssh time-out 60
+    - ip ssh authentication-retries 5
+  name: Configure SSH settings
+- ios_user:
+    name: admin
+    password: !!binary |
+      T2Rpc2Vl
+    privilege: 15
+    state: present
+  name: Create local user
+- ios_config:
+    lines:
+    - service password-encryption
+  name: Enable password encryption
+- ios_ospf:
+    networks:
+    - area: '0'
+      prefix: 10.0.0.0/24
+      wildcard_bits: 0.0.0.255
+    process_id: '10'
+  name: Configure OSPF
+- ios_vlan:
+  - name: Management
+    vlan_id: 10
+  - name: Fitness
+    vlan_id: 20
+  - name: Student
+    vlan_id: 50
+  name: Configure VLANs
+- ios_interface:
+  - description: Management
+    enabled: true
+    ip_address: 192.168.10.1
+    name: Vlan10
+    subnet_mask: 255.255.255.0
+  - description: Fitness
+    enabled: true
+    ip_address: 192.168.20.1
+    name: Vlan20
+    subnet_mask: 255.255.255.0
+  - description: Student
+    enabled: true
+    ip_address: 192.168.30.1
+    name: Vlan50
+    subnet_mask: 255.255.255.0
+  name: Configure VLAN interfaces
+- ios_interface:
+  - access_vlan: '10'
+    description: LAN
+    mode: access
+    name: Ethernet0/0
+    trunk_allowed_vlans: null
+  name: Configure Ethernet interfaces
+- ios_config:
+    lines:
+    - ip route 0.0.0.0 0.0.0.0 192.168.0.1
+  name: Configure default gateway
+- ios_config:
+    lines:
+    - ip routing
+    - ip http server
+    - ip telnet server
+  name: Enable required services
