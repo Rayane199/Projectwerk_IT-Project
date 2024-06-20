@@ -2,7 +2,7 @@ import subprocess
 
 # Define the paths and variables
 ovf_file = r"C:\Users\slimane\Documents\UbuntuProject Images.ova"
-vm_name = "NewUbuntuVM"  # Adjust the VM name as needed
+vm_name = "NEWDEMO"  # Adjust the VM name as needed
 
 try:
     # Import the OVF file to create the VM
