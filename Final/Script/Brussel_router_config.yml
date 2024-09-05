@@ -1,0 +1,129 @@
+---
+- hosts: routers
+  tasks:
+    - name: interface GigabitEthernet0/0.10
+      command: interface GigabitEthernet0/0.10
+    - name:  encapsulation dot1Q 10
+      command:  encapsulation dot1Q 10
+    - name:  ip address 192.168.0.1 255.255.255.224
+      command:  ip address 192.168.0.1 255.255.255.224
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_LOKAAL_1_brussel
+      command: ip dhcp pool POOL_LOKAAL_1_brussel
+    - name:  network 192.168.0.0 255.255.255.224
+      command:  network 192.168.0.0 255.255.255.224
+    - name:  default-router 192.168.0.1
+      command:  default-router 192.168.0.1
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: interface GigabitEthernet0/0.11
+      command: interface GigabitEthernet0/0.11
+    - name:  encapsulation dot1Q 11
+      command:  encapsulation dot1Q 11
+    - name:  ip address 192.168.0.33 255.255.255.224
+      command:  ip address 192.168.0.33 255.255.255.224
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_LOKAAL_2_brussel
+      command: ip dhcp pool POOL_LOKAAL_2_brussel
+    - name:  network 192.168.0.32 255.255.255.224
+      command:  network 192.168.0.32 255.255.255.224
+    - name:  default-router 192.168.0.33
+      command:  default-router 192.168.0.33
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: interface GigabitEthernet0/0.12
+      command: interface GigabitEthernet0/0.12
+    - name:  encapsulation dot1Q 12
+      command:  encapsulation dot1Q 12
+    - name:  ip address 192.168.0.65 255.255.255.224
+      command:  ip address 192.168.0.65 255.255.255.224
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_LOKAAL_3_brussel
+      command: ip dhcp pool POOL_LOKAAL_3_brussel
+    - name:  network 192.168.0.64 255.255.255.224
+      command:  network 192.168.0.64 255.255.255.224
+    - name:  default-router 192.168.0.65
+      command:  default-router 192.168.0.65
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: interface GigabitEthernet0/0.13
+      command: interface GigabitEthernet0/0.13
+    - name:  encapsulation dot1Q 13
+      command:  encapsulation dot1Q 13
+    - name:  ip address 192.168.0.97 255.255.255.224
+      command:  ip address 192.168.0.97 255.255.255.224
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_LOKAAL_4_brussel
+      command: ip dhcp pool POOL_LOKAAL_4_brussel
+    - name:  network 192.168.0.96 255.255.255.224
+      command:  network 192.168.0.96 255.255.255.224
+    - name:  default-router 192.168.0.97
+      command:  default-router 192.168.0.97
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: interface GigabitEthernet0/0.14
+      command: interface GigabitEthernet0/0.14
+    - name:  encapsulation dot1Q 14
+      command:  encapsulation dot1Q 14
+    - name:  ip address 192.168.0.129 255.255.255.224
+      command:  ip address 192.168.0.129 255.255.255.224
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_LOKAAL_5_brussel
+      command: ip dhcp pool POOL_LOKAAL_5_brussel
+    - name:  network 192.168.0.128 255.255.255.224
+      command:  network 192.168.0.128 255.255.255.224
+    - name:  default-router 192.168.0.129
+      command:  default-router 192.168.0.129
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: interface GigabitEthernet0/0.999
+      command: interface GigabitEthernet0/0.999
+    - name:  encapsulation dot1Q 999
+      command:  encapsulation dot1Q 999
+    - name:  ip address 192.168.2.1 255.255.255.128
+      command:  ip address 192.168.2.1 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: ip dhcp pool POOL_WIFI_255.255.255.128
+      command: ip dhcp pool POOL_WIFI_255.255.255.128
+    - name:  network 192.168.2.0 255.255.255.128
+      command:  network 192.168.2.0 255.255.255.128
+    - name:  default-router 192.168.2.1
+      command:  default-router 192.168.2.1
+    - name:  dns-server 8.8.8.8
+      command:  dns-server 8.8.8.8
+    - name: !
+      command: !
+    - name: ip nat inside source list 1 interface GigabitEthernet0/0 overload
+      command: ip nat inside source list 1 interface GigabitEthernet0/0 overload
+    - name: access-list 1 permit 192.168.0.0 0.0.255.255
+      command: access-list 1 permit 192.168.0.0 0.0.255.255
+    - name: !
+      command: !

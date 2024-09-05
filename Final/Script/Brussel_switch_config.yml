@@ -1,0 +1,2643 @@
+---
+- hosts: switches
+  tasks:
+    - name: vlan 10
+      command: vlan 10
+    - name:  name Lokaal_1_brussel
+      command:  name Lokaal_1_brussel
+    - name: interface vlan 10
+      command: interface vlan 10
+    - name:  ip address 192.168.0.2 2
+      command:  ip address 192.168.0.2 2
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: vlan 999
+      command: vlan 999
+    - name:  name WiFi
+      command:  name WiFi
+    - name: interface vlan 999
+      command: interface vlan 999
+    - name:  ip address 192.168.2.2 255.255.255.128
+      command:  ip address 192.168.2.2 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 10
+      command:  switchport access vlan 10
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/21
+      command: interface GigabitEthernet 0/21
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/22
+      command: interface GigabitEthernet 0/22
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/23
+      command: interface GigabitEthernet 0/23
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/24
+      command: interface GigabitEthernet 0/24
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: vlan 11
+      command: vlan 11
+    - name:  name Lokaal_2_brussel
+      command:  name Lokaal_2_brussel
+    - name: interface vlan 11
+      command: interface vlan 11
+    - name:  ip address 192.168.0.34 5
+      command:  ip address 192.168.0.34 5
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: vlan 999
+      command: vlan 999
+    - name:  name WiFi
+      command:  name WiFi
+    - name: interface vlan 999
+      command: interface vlan 999
+    - name:  ip address 192.168.2.2 255.255.255.128
+      command:  ip address 192.168.2.2 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 11
+      command:  switchport access vlan 11
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/21
+      command: interface GigabitEthernet 0/21
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/22
+      command: interface GigabitEthernet 0/22
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/23
+      command: interface GigabitEthernet 0/23
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/24
+      command: interface GigabitEthernet 0/24
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: vlan 12
+      command: vlan 12
+    - name:  name Lokaal_3_brussel
+      command:  name Lokaal_3_brussel
+    - name: interface vlan 12
+      command: interface vlan 12
+    - name:  ip address 192.168.0.66 5
+      command:  ip address 192.168.0.66 5
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: vlan 999
+      command: vlan 999
+    - name:  name WiFi
+      command:  name WiFi
+    - name: interface vlan 999
+      command: interface vlan 999
+    - name:  ip address 192.168.2.2 255.255.255.128
+      command:  ip address 192.168.2.2 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 12
+      command:  switchport access vlan 12
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/21
+      command: interface GigabitEthernet 0/21
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/22
+      command: interface GigabitEthernet 0/22
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/23
+      command: interface GigabitEthernet 0/23
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/24
+      command: interface GigabitEthernet 0/24
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: vlan 13
+      command: vlan 13
+    - name:  name Lokaal_4_brussel
+      command:  name Lokaal_4_brussel
+    - name: interface vlan 13
+      command: interface vlan 13
+    - name:  ip address 192.168.0.98 .
+      command:  ip address 192.168.0.98 .
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: vlan 999
+      command: vlan 999
+    - name:  name WiFi
+      command:  name WiFi
+    - name: interface vlan 999
+      command: interface vlan 999
+    - name:  ip address 192.168.2.2 255.255.255.128
+      command:  ip address 192.168.2.2 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 13
+      command:  switchport access vlan 13
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/21
+      command: interface GigabitEthernet 0/21
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/22
+      command: interface GigabitEthernet 0/22
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/23
+      command: interface GigabitEthernet 0/23
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/24
+      command: interface GigabitEthernet 0/24
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: vlan 14
+      command: vlan 14
+    - name:  name Lokaal_5_brussel
+      command:  name Lokaal_5_brussel
+    - name: interface vlan 14
+      command: interface vlan 14
+    - name:  ip address 192.168.0.130 2
+      command:  ip address 192.168.0.130 2
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: vlan 999
+      command: vlan 999
+    - name:  name WiFi
+      command:  name WiFi
+    - name: interface vlan 999
+      command: interface vlan 999
+    - name:  ip address 192.168.2.2 255.255.255.128
+      command:  ip address 192.168.2.2 255.255.255.128
+    - name:  no shutdown
+      command:  no shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/1
+      command: interface GigabitEthernet 0/1
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/2
+      command: interface GigabitEthernet 0/2
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/3
+      command: interface GigabitEthernet 0/3
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/4
+      command: interface GigabitEthernet 0/4
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/5
+      command: interface GigabitEthernet 0/5
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/6
+      command: interface GigabitEthernet 0/6
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/7
+      command: interface GigabitEthernet 0/7
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/8
+      command: interface GigabitEthernet 0/8
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/9
+      command: interface GigabitEthernet 0/9
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/10
+      command: interface GigabitEthernet 0/10
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/11
+      command: interface GigabitEthernet 0/11
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/12
+      command: interface GigabitEthernet 0/12
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/13
+      command: interface GigabitEthernet 0/13
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/14
+      command: interface GigabitEthernet 0/14
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/15
+      command: interface GigabitEthernet 0/15
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/16
+      command: interface GigabitEthernet 0/16
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/17
+      command: interface GigabitEthernet 0/17
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/18
+      command: interface GigabitEthernet 0/18
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/19
+      command: interface GigabitEthernet 0/19
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/20
+      command: interface GigabitEthernet 0/20
+    - name:  switchport access vlan 14
+      command:  switchport access vlan 14
+    - name:  switchport mode access
+      command:  switchport mode access
+    - name:  switchport port-security
+      command:  switchport port-security
+    - name:  switchport port-security maximum 2
+      command:  switchport port-security maximum 2
+    - name:  switchport port-security violation restrict
+      command:  switchport port-security violation restrict
+    - name:  switchport port-security aging time 2
+      command:  switchport port-security aging time 2
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/21
+      command: interface GigabitEthernet 0/21
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/22
+      command: interface GigabitEthernet 0/22
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/23
+      command: interface GigabitEthernet 0/23
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !
+    - name: interface GigabitEthernet 0/24
+      command: interface GigabitEthernet 0/24
+    - name:  shutdown
+      command:  shutdown
+    - name: !
+      command: !

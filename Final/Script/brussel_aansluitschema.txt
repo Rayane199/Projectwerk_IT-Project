@@ -1,0 +1,8 @@
+Aansluitschema voor brussel:
+
+Lokaal 1: VLAN 10
+Lokaal 2: VLAN 11
+Lokaal 3: VLAN 12
+Lokaal 4: VLAN 13
+Lokaal 5: VLAN 14
+Wi-Fi VLAN: 999
